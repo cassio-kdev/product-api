@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.kdev.dto.ProductDTO;
-import br.com.kdev.error.ProductNotFoundException;
 import br.com.kdev.service.ProductService;
 
 @RestController
@@ -47,7 +46,7 @@ public class ProductController {
 	}
 
 	@DeleteMapping("/product/{id}")
-	public ProductDTO delete(@PathVariable Long id) throws ProductNotFoundException {
+	public ProductDTO delete(@PathVariable Long id){
 		return productService.delete(id);
 	}
 
