@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import br.com.kdev.model.dto.ProductDTO;
+import br.com.kdev.dto.ProductDTO;
 
 @Entity(name="product")
 public class Product {

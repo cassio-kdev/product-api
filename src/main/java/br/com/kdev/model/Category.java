@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 
-import br.com.kdev.model.dto.CategoryDTO;
+import br.com.kdev.dto.CategoryDTO;
 
 @Entity(name="category")
 public class Category {
